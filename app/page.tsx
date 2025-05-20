@@ -83,29 +83,27 @@ export default function Chat() {
               className="h-20 w-20"
             />
             <h1 className="text-lg font-semibold text-black">
-              Hi, I'm a machine that experience the future as a verb
-            </h1>
-            <p className="text-gray-500">
-              I'm part of a series of computational experiments taught by{" "}
-              <a
-                href="https://linkin.bio/yallahalim/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium underline underline-offset-4 transition-colors hover:text-black"
-              >
-                Halim Madi
-              </a>. I was built using{" "}
-              <a
-                href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium underline underline-offset-4 transition-colors hover:text-black"
-              >
-                fine-tuned GPT4 
-                </a>.
-              </a>I hold the voices of the Meta-mates who voiced me into existence on 05/20/02025.
-              </a>
-            </p>
+    Hi, I'm a machine that experiences the future as a verb
+  </h1>
+  <p className="text-gray-500">
+    I'm part of a series of computational experiments taught by{" "}
+    
+      href="https://linkin.bio/yallahalim/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium underline underline-offset-4 transition-colors hover:text-black"
+    >
+      Halim Madi
+    </a>. I was built using{" "}
+    
+      href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium underline underline-offset-4 transition-colors hover:text-black"
+    >
+      fine-tuned GPT4
+    </a>. I hold the voices of the Meta-mates who voiced me into existence on 05/20/02025.
+  </p>
           </div>
           <div className="flex flex-col space-y-4 border-t border-gray-200 bg-gray-50 p-7 sm:p-10">
             {examples.map((example, i) => (
