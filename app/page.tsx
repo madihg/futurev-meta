@@ -101,7 +101,7 @@ export default function Chat() {
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4 transition-colors hover:text-black"
               >
-                fine-tuned GPT4.
+                fine-tuned GPT4. I hold the voices of the Meta-mates who voiced me into existence on 05/20/02025.
               </a>
             </p>
           </div>
