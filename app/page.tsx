@@ -162,3 +162,41 @@ export default function Chat() {
                   "h-4 w-4",
                   input.length === 0 ? "text-gray-300" : "text-white",
                 )}
+              />
+            )}
+          </button>
+        </form>
+        <p className="text-center text-xs text-gray-400">
+          Built with{" "}
+          
+            href="https://sdk.vercel.ai/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-black"
+          >
+            Vercel AI SDK
+          </a>
+          ,{" "}
+          
+            href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-black"
+          >
+            OpenAI GPT-3.5-turbo, as part of a course taught by
+          </a>{" "}
+          Halim Madi.{" "}
+          
+            href="https://linkin.bio/yallahalim/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-black"
+          >
+            Learn to build your own
+          </a>
+          .
+        </p>
+      </div>
+    </main>
+  );
+}
