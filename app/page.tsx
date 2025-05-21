@@ -36,15 +36,14 @@ export default function Chat() {
 
   return (
     <main className="flex flex-col items-center justify-between pb-40">
-      <div className="absolute top-5 hidden w-full justify-between px-5 sm:flex">
-      </div>
+      <div className="absolute top-5 hidden w-full justify-between px-5 sm:flex"></div>
       {messages.length > 0 ? (
         messages.map((message, i) => (
           <div
             key={i}
             className={clsx(
               "flex w-full items-center justify-center border-b border-gray-200 py-8",
-              message.role === "user" ? "bg-white" : "bg-gray-100",
+              message.role === "user" ? "bg-white" : "bg-gray-100"
             )}
           >
             <div className="flex w-full max-w-screen-md items-start space-x-4 px-5 sm:px-0">
@@ -52,7 +51,7 @@ export default function Chat() {
                 className={clsx(
                   message.role === "assistant"
                     ? "bg-white"
-                    : "bg-black p-1.5 text-white",
+                    : "bg-black p-1.5 text-white"
                 )}
               >
                 {message.role === "user" ? (
@@ -73,7 +72,7 @@ export default function Chat() {
           </div>
         ))
       ) : (
-        <div className="border-gray-200sm:mx-0 mx-5 mt-20 max-w-screen-md rounded-md border sm:w-full">
+        <div className="border-gray-200 sm:mx-0 mx-5 mt-20 max-w-screen-md rounded-md border sm:w-full">
           <div className="flex flex-col space-y-4 p-7 sm:p-10">
             <Image
               src="/sample-image.png"
@@ -87,22 +86,25 @@ export default function Chat() {
             </h1>
             <p className="text-gray-500">
               I'm part of a series of computational experiments taught by{" "}
-              
+              <a
                 href="https://linkin.bio/yallahalim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4 transition-colors hover:text-black"
               >
                 Halim Madi
-              </a>. I was built using{" "}
-              
-                href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
+              </a>
+              . I was built using{" "}
+              <a
+                href="https://openai.com/blog/gpt-3.5-turbo-fine-tuning-and-api-updates"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4 transition-colors hover:text-black"
               >
                 fine-tuned GPT4
-              </a>. I hold the voices of the Meta-mates who voiced me into existence on 05/20/02025.
+              </a>
+              . I hold the voices of the Meta-mates who voiced me into existence
+              on 05/20/02025.
             </p>
           </div>
           <div className="flex flex-col space-y-4 border-t border-gray-200 bg-gray-50 p-7 sm:p-10">
@@ -150,7 +152,7 @@ export default function Chat() {
               "absolute inset-y-0 right-3 my-auto flex h-8 w-8 items-center justify-center rounded-md transition-all",
               disabled
                 ? "cursor-not-allowed bg-white"
-                : "bg-green-500 hover:bg-green-600",
+                : "bg-green-500 hover:bg-green-600"
             )}
             disabled={disabled}
           >
@@ -160,7 +162,7 @@ export default function Chat() {
               <SendIcon
                 className={clsx(
                   "h-4 w-4",
-                  input.length === 0 ? "text-gray-300" : "text-white",
+                  input.length === 0 ? "text-gray-300" : "text-white"
                 )}
               />
             )}
@@ -168,7 +170,7 @@ export default function Chat() {
         </form>
         <p className="text-center text-xs text-gray-400">
           Built with{" "}
-          
+          <a
             href="https://sdk.vercel.ai/docs"
             target="_blank"
             rel="noopener noreferrer"
@@ -177,8 +179,8 @@ export default function Chat() {
             Vercel AI SDK
           </a>
           ,{" "}
-          
-            href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
+          <a
+            href="https://openai.com/blog/gpt-3.5-turbo-fine-tuning-and-api-updates"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-black"
@@ -186,7 +188,7 @@ export default function Chat() {
             OpenAI GPT-3.5-turbo, as part of a course taught by
           </a>{" "}
           Halim Madi.{" "}
-          
+          <a
             href="https://linkin.bio/yallahalim/"
             target="_blank"
             rel="noopener noreferrer"
